@@ -29,8 +29,8 @@ class NewsFragment : Fragment(R.layout.fragment_news) {
         viewModel = (activity as NewsActivity).viewModel
         setupRecyclerView()
 
-        viewModel.news.observe(viewLifecycleOwner, Observer { response ->
-            when(response){
+        viewModel.news.observe(viewLifecycleOwner) { response ->
+            when (response) {
                 is Resource.Success -> {
                     hideProgressBar()
                     response.data?.let { newsResponse ->
@@ -40,14 +40,15 @@ class NewsFragment : Fragment(R.layout.fragment_news) {
                 is Resource.Error -> {
                     hideProgressBar()
                     response.message?.let { message ->
-                        Log.e("NewsFragment", "An error occurred: $message")
+                        Toast.makeText(activity, "An error occured: $message", Toast.LENGTH_SHORT)
+                            .show()
                     }
                 }
                 is Resource.Loading -> {
                     showProgressBar()
                 }
             }
-        })
+        }
 
         val category = args.category
 
