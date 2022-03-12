@@ -3,4 +3,6 @@
     <string name="navigationItemCategories">Categories</string>
     <string name="navigationItemFavorites">Favorite Articles</string>
     <string name="newsApp">News App</string>
+    <string name="signInRequired">You need to sign in to access favorite articles</string>
+    <string name="signOut">Sign Out</string>
 </resources>

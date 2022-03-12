@@ -26,6 +26,9 @@
             app:exitAnim="@anim/slide_out_left"
             app:popEnterAnim="@anim/slide_in_left"
             app:popExitAnim="@anim/slide_out_right"/>
+        <action
+            android:id="@+id/action_favoriteArticlesFragment_to_googleSignInFragment"
+            app:destination="@id/googleSignInFragment" />
     </fragment>
     <fragment
         android:id="@+id/newsFragment"
@@ -49,5 +52,17 @@
         <argument
             android:name="article"
             app:argType="com.example.msappsassignment.models.Data" />
+    </fragment>
+    <fragment
+        android:id="@+id/googleSignInFragment"
+        android:name="com.example.msappsassignment.ui.fragments.GoogleSignInFragment"
+        android:label="GoogleSignInFragment" >
+        <action
+            android:id="@+id/action_googleSignInFragment_to_favoriteArticlesFragment"
+            app:destination="@id/favoriteArticlesFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
     </fragment>
 </navigation>

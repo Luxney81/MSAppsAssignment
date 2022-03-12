@@ -74,4 +74,7 @@ dependencies {
     kapt 'com.github.bumptech.glide:compiler:4.11.0'
     implementation "androidx.core:core-ktx:+"
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+
+    //Google Play Services
+    implementation 'com.google.android.gms:play-services-auth:20.1.0'
 }

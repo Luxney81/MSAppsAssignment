@@ -6,7 +6,7 @@
         android:icon="@drawable/ic_categories">
     </item>
 
-    <item android:id="@+id/favoriteArticlesFragment"
+    <item android:id="@+id/googleSignInFragment"
         android:title="@string/navigationItemFavorites"
         android:icon="@drawable/ic_favorite">
     </item>
