@@ -36,8 +36,6 @@ class CategoriesFragment : Fragment(R.layout.fragment_categories) {
                 bundle
             )
         }
-
-
     }
 
     private fun setupRecyclerView(){

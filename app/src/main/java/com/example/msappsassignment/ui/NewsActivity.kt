@@ -9,7 +9,7 @@ import com.example.msappsassignment.R
 import com.example.msappsassignment.db.ArticleDatabase
 import com.example.msappsassignment.repository.NewsRepository
 import com.example.msappsassignment.ui.viewmodel.NewsViewModel
-import com.example.msappsassignment.ui.viewmodel.factories.NewsViewModelProviderFactory
+import com.example.msappsassignment.ui.viewmodel.NewsViewModelProviderFactory
 import kotlinx.android.synthetic.main.activity_news.*
 
 class NewsActivity : AppCompatActivity() {

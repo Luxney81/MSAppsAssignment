@@ -44,6 +44,7 @@ class FavoriteArticlesFragment : Fragment(R.layout.fragment_favorite_articles) {
                 )
             }
 
+            //swipe to remove favorite items
             val itemTouchHelperCallback = object : ItemTouchHelper.SimpleCallback(
                 ItemTouchHelper.UP or ItemTouchHelper.DOWN,
                 ItemTouchHelper.LEFT or ItemTouchHelper.RIGHT
